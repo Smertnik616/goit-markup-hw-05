@@ -532,124 +532,190 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-content">
-        <div class="footer-logo">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo-studio-white">Studio</span>
-          </a>
-          <p class="text-light">
+   <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-container-main">
+          <a class="nav-logo" href="./index.html"
+            >Web<span class="accent">Studio</span></a
+          >
+          <p class="footer-text">
             Increase the flow of customers and sales for your business with
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-social">
-          <p class="footer-social-subtitle">Social media</p>
-          <ul class="footer-social-icons">
-            <li class="footer-social-icons-item">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                class="footer-social-icons-link"
-              >
+        <div class="footer-container-social">
+          <p class="footer-container-social-text">Social media</p>
+          <ul class="footer-container-social-list">
+            <li class="footer-container-social-list-item">
+              <a href="" class="footer-container-social-list-item-link">
                 <svg
+                  class="footer-container-social-list-item-link-svg"
                   width="24"
                   height="24"
-                  class="footer-social-icons-link-svg"
                 >
-                  <use href="./images/icons.svg#icon-inst"></use>
+                  <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-icons-item">
-              <a
-                href="https://x.com/"
-                target="_blank"
-                class="footer-social-icons-link"
-              >
+            <li class="footer-container-social-list-item">
+              <a href="" class="footer-container-social-list-item-link">
                 <svg
+                  class="footer-container-social-list-item-link-svg"
                   width="24"
                   height="24"
-                  class="footer-social-icons-link-svg"
                 >
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-icons-item">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                class="footer-social-icons-link"
-              >
+            <li class="footer-container-social-list-item">
+              <a href="" class="footer-container-social-list-item-link">
                 <svg
+                  class="footer-container-social-list-item-link-svg"
                   width="24"
                   height="24"
-                  class="footer-social-icons-link-svg"
                 >
-                  <use href="./images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-icons-item">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                class="footer-social-icons-link"
-              >
+            <li class="footer-container-social-list-item">
+              <a href="" class="footer-container-social-list-item-link">
                 <svg
+                  class="footer-container-social-list-item-link-svg"
                   width="24"
                   height="24"
-                  class="footer-social-icons-link-svg"
                 >
-                  <use href="./images/icons.svg#icon-In"></use>
+                  <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="overlay">
-          <label for="Subscribe" class="Sub">Subscribe</label><br />
-          <input type="email" class="inp" />
-          <button class="butt">Subscribe</button>
-        </form>
+        <div class="footer-container-subscribtion">
+          <p class="footer-container-subscribtion-text">Subscribe</p>
+          <form class="footer-container-subscribtion-form">
+            <label for="email" class="footer-container-subscribtion-form-label">
+              <input
+                id="email"
+                type="email"
+                placeholder="E-mail"
+                name="email"
+                class="footer-container-subscribtion-form-label-input"
+              />
+            </label>
+            <button
+              type="submit"
+              class="footer-container-subscribtion-form-btn"
+            >
+              Subscribe
+              <svg
+                width="24"
+                height="24"
+                class="footer-container-subscribtion-form-btn-svg"
+              >
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <div class="pop-up-container">
+      <div class="pop-up">
+        <button type="button" class="pop-up-btn">
+          <svg width="8" height="8" class="pop-up-btn-svg">
+            <use href="./images/icons.svg#cross"></use>
+          </svg>
+        </button>
+        <p class="pop-up-text">Leave your contacts and we will call you back</p>
+        <form class="pop-up-form">
+          <!-- Name field -->
+          <div class="pop-up-form-field-wrapper">
+            <label for="user-name" class="pop-up-form-label">Name</label>
+            <div class="pop-up-form-field">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="pop-up-form-field-input"
+              />
+              <svg width="18" height="24" class="pop-up-form-field-svg">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
 
-    <div class="overlay_up">
-      <form class="pop-up">
-        <button type="button" class="pop-up-close-btn">x</button>
-        <p class="pop-up-title">Leave your contacts and we will call you back</p>
-        
-          <fieldset class="pop-up-filed">
-            <label for="name">Name</label>
-            <input type="text" name="" placeholder="Your name" class="pop-up-filed-input" />
-          </fieldset>
+          <!-- Phone field -->
+          <div class="pop-up-form-field-wrapper">
+            <label for="user-phone" class="pop-up-form-label">Phone</label>
+            <div class="pop-up-form-field">
+              <input
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                class="pop-up-form-field-input"
+              />
+              <svg width="18" height="24" class="pop-up-form-field-svg">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
 
-          <fieldset class="pop-up-filed">
-            <label for="phone">Phone</label>
-            <input type="tel" name="telephone" placeholder="Your telephone" class="pop-up-filed-input" />
-          </fieldset>
+          <!-- Email field -->
+          <div class="pop-up-form-field-wrapper">
+            <label for="user-email" class="pop-up-form-label">Email</label>
+            <div class="pop-up-form-field">
+              <input
+                type="email"
+                id="user-email"
+                name="user-email"
+                class="pop-up-form-field-input"
+              />
+              <svg width="18" height="24" class="pop-up-form-field-svg">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
 
-          <fieldset class="pop-up-filed">
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Your email" class="pop-up-filed-input" />
-          </fieldset>
+          <!-- Comment -->
+          <div class="pop-up-form-field-comment">
+            <label for="user-comment" class="pop-up-form-label">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+              class="pop-up-form-field-comment-textarea"
+            ></textarea>
+          </div>
 
-          <fieldset class="pop-up-filed">
-            <label for="comment">Comment</label>
-            <textarea name="comment" placeholder="Text input" class="pop-up-filed-checkbox"></textarea>
-          </fieldset>
+          <!-- Checkbox -->
+          <div class="pop-up-form-field-comment-checkbox">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              class="visually-hidden checkbox-input"
+            />
+            <label
+              for="user-privacy"
+              class="pop-up-form-field-comment-checkbox-label"
+            >
+              <span class="checkbox-custom">
+                <svg width="10" height="8" class="checkbox-icon">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="policy-link">Privacy Policy</a>
+            </label>
+          </div>
 
-          <fieldset class="pop-up-filed">
-            <input type="checkbox" />
-            <label for="privacy" class="pop-up-text">I accept the terms and conditions of the Privacy Policy</label>
-          </fieldset>
-          
-          <div class="button-pop-up">
-            <button type="submit" class="bottom-subscribe-sumbit">Send</button>
-        </div>
-      </form>
+          <!-- Submit -->
+          <button type="submit" class="pop-up-form-btn">Send</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
