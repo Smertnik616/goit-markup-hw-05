@@ -804,103 +804,56 @@ header - start */
 /* ---------------------------------------
 footer - start */
 
-.footer {
-    background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+/* !Footer */
+.end-page .page-text {
+  color: #f4f4fd;
+  max-width: 264px;
 }
 
-.footer-content {
-    display: flex;    
-    align-items: baseline;
+.end-page {
+  height: 312px;
+  background-color: #2e2f42;
+  padding: 100px 0;
 }
 
-.footer-logo {
-    margin-right: 120px;
+.end-page > .container {
+  display: flex;
+  align-items: baseline;
 }
 
-.footer .logo {
-    display: inline-block;
-    margin-bottom: 16px;
+.container .footer-socials {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
 }
 
-.logo-studio-white {
-    color: #f4f4fd;
+.footer-socials .social-list {
+  display: flex;
+  gap: 16px;
 }
 
-.text-light {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    max-width: 264px;
+.footer-socials .page-text {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
-.footer-social-subtitle {
-    color: #FFFFFF;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 16px;
+.footer-text {
+  margin-right: 120px;
 }
 
-.footer-social-icons {
-    display: flex;
-    gap: 16px;
+.footer-socials .social-link:hover,
+.footer-socials .social-link:focus {
+  background-color: #31d0aa;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-icons-item {
-    width: 40px;
-    height: 40px;
-}
-.footer-social-icons-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: #4D5AE5;
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.end-page .logo {
+  display: block;
+  margin-bottom: 16px;
 }
 
-.footer-social-icons-link:hover,
-.footer-social-icons-link:focus {
-    background-color: #31d0aa;
-}
-
-.footer-social-icons-link-svg {
-    fill: #f4f4fd;
-}
-
-/* 
-forma  */
-
-.overlay {display: block;
-color: #FFFFFF;
-margin-left: 80px;
-}
-.Sub {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
-color: #FFFFFF;
-
-
-}
-.inp {
-color: #FFFFFF;
-}
-.butt {
-    background-color: #4D5AE5;
-color: #FFFFFF;
-}
-
-/* 
-pull-up menu */
-
-
+/* !Subscribe section */
 .page-text.form-title {
   margin-bottom: 16px;
   font-weight: 500;
@@ -988,6 +941,7 @@ pull-up menu */
   padding: 72px 24px 24px 24px;
 }
 
+/* *Close button */
 .button-modal-close {
   position: absolute;
   top: 24px;
